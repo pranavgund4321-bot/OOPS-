@@ -1,0 +1,17 @@
+MEMORY CHECK RECORD — PRACTICAL 03
+
+Status: Not yet executed on the user's machine.
+
+Recommended check in Ubuntu / WSL:
+  g++ -std=c++17 -g -O0 main.cpp -o main
+  valgrind --leak-check=full --show-leak-kinds=all ./main
+
+Alternative with a compiler/runtime supporting AddressSanitizer:
+  g++ -std=c++17 -g -O1 -fsanitize=address -fno-omit-frame-pointer main.cpp -o main_asan
+  ./main_asan
+
+Expected interpretation:
+- Valgrind: no definitely-lost or indirectly-lost bytes; ideally "All heap blocks were freed -- no leaks are possible".
+- AddressSanitizer: no sanitizer error report. Leak detection support depends on platform/runtime.
+
+Paste the actual output from the tool you run here before submitting. Do not report a successful memory check until it has been run.
