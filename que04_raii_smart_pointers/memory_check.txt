@@ -1,0 +1,21 @@
+PRACTICAL 04 – MEMORY CHECK EVIDENCE
+
+Status: Not yet run on the user's computer.
+
+Run one of the following and paste the actual terminal output below.
+
+Ubuntu / WSL (Valgrind):
+    g++ -std=c++17 -g main.cpp -o main
+    valgrind --leak-check=full --show-leak-kinds=all ./main
+
+AddressSanitizer:
+    g++ -std=c++17 -g -fsanitize=address -fno-omit-frame-pointer main.cpp -o main_asan
+    ./main_asan
+
+Actual tool used:
+[Fill in: Valgrind / AddressSanitizer]
+
+Actual output / summary:
+[Paste the real output here.]
+
+Note: The sample output demonstrates program behaviour; it is not proof of a memory-check result. Do not report "zero leaks" until the memory-check tool has actually been run.
