@@ -1,0 +1,31 @@
+RAII AND SMART POINTERS DEMONSTRATION
+
+--- 1. Raw pointer (manual ownership) ---
+[Construct] Raw resource
+Using resource: Raw resource
+[Destroy] Raw resource
+Raw resource deleted manually.
+
+--- 2. unique_ptr (exclusive ownership) ---
+[Construct] Unique resource
+Using resource: Unique resource
+Original owner is empty.
+Using resource: Unique resource
+[Destroy] Unique resource
+unique_ptr scope ended.
+Managed array: 10, 20, 30
+
+--- 3. shared_ptr (shared ownership) ---
+[Construct] Shared resource
+Owners after creating two modules: 3
+Report module accesses the shared resource.
+Using resource: Shared resource
+Backup module accesses the shared resource.
+Using resource: Shared resource
+Owners after modules leave scope: 1
+[Destroy] Shared resource
+
+--- 4. Repeated RAII iterations ---
+Completed 1000 unique_ptr/shared_ptr iterations.
+
+Program completed.
