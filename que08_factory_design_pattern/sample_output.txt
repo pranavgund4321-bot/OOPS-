@@ -1,0 +1,6 @@
+Factory Design Pattern Demonstration
+-------------------------------------
+Request 1: circle
+Drawing a Circle.
+Request 2: rectangle
+Drawing a Rectangle.
