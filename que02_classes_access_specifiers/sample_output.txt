@@ -1,0 +1,17 @@
+========== BANK ACCOUNT MANAGEMENT =========
+
+--- ACCOUNT 1 ---
+Account holder : Aarav Sharma
+Account number : BA1001
+Balance        : Rs. 5000.00
+Rs. 1500.00 deposited successfully.
+Rs. 2000.00 withdrawn successfully.
+Final balance  : Rs. 4500.00
+
+--- ACCOUNT 2 ---
+Account holder : Diya Patel
+Account number : BA1002
+Balance        : Rs. 2500.00
+Rs. 1000.00 deposited successfully.
+Withdrawal failed: insufficient balance.
+Final balance  : Rs. 3500.00
