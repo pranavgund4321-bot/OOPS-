@@ -1,0 +1,16 @@
+=== Banking Transaction Demo ===
+Aarav Sharma's current balance: Rs. 1000.00
+
+1. Successful withdrawal
+Withdrawal successful: Rs. 250.00
+Aarav Sharma's current balance: Rs. 750.00
+
+2. Invalid amount (negative value)
+InvalidAmount: Transaction amount must be greater than zero.
+Aarav Sharma's current balance: Rs. 750.00
+
+3. Withdrawal exceeding available balance
+InsufficientFunds: Transaction declined: insufficient account balance.
+Aarav Sharma's current balance: Rs. 750.00
+
+All transactions completed. Failed transactions did not change the balance.
