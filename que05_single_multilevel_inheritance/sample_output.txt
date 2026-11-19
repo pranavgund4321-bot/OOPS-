@@ -1,0 +1,17 @@
+UNIVERSITY MANAGEMENT - INHERITANCE DEMO
+
+--- Student (Single Inheritance) ---
+Name: Aarav Sharma
+Age: 20
+Student ID: STU2026001
+Course: B.Tech Computer Science
+
+--- Graduate Student (Multilevel Inheritance) ---
+Name: Diya Patel
+Age: 24
+Student ID: PG2026007
+Course: M.Tech Computer Science
+Research Topic: Distributed Data Processing
+Supervisor: Dr. Meera Kulkarni
+
+Inheritance demonstration completed.
