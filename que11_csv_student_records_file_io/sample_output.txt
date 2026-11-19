@@ -1,0 +1,25 @@
+=== CSV Student Records Using File I/O ===
+Successfully wrote 3 student records to students.csv.
+
+Student records read from students.csv:
+ID        Name                Marks
+----------------------------------------
+1001      Aarav Sharma        88.50
+1002      Diya Patel          92.00
+1003      Rohan Mehta         79.25
+Valid records: 3
+
+--- Read position demonstration ---
+Initial tellg(): 0
+First five characters: ID,Na
+tellg() after reading 5 bytes: 5
+After seekg(0, beg), tellg(): 0
+Header after repositioning: ID,Name,Marks
+
+--- Write position demonstration ---
+Initial tellp(): 0
+After seekp(1, beg), tellp(): 1
+File content after writing at position 1: AZCDE
+After seekp(0, end), tellp(): 5
+
+Generated files: students.csv and position_demo.txt
