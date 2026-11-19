@@ -1,0 +1,22 @@
+===== CONSTRUCTORS AND RULE OF FIVE =====
+
+Default constructor called.
+empty [size=0]: (empty)
+Parameterized constructor called for 5 elements.
+original [size=5]: 10 11 12 13 14
+Copy constructor called.
+copied [size=5]: 10 11 12 13 14
+Default constructor called.
+Copy assignment operator called.
+copyAssigned [size=5]: 10 11 12 13 14
+copied after modification [size=5]: 100 101 102 103 104
+original remains unchanged [size=5]: 10 11 12 13 14
+Move constructor called.
+moved [size=5]: 10 11 12 13 14
+original after move [size=0]: (empty)
+Default constructor called.
+Move assignment operator called.
+moveAssigned [size=5]: 10 11 12 13 14
+copyAssigned after move [size=0]: (empty)
+
+All objects will now leave scope and release their memory.
